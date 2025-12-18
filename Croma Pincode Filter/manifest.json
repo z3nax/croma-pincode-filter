@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Croma Pincode Filter",
+  "version": "1.0",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.croma.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
